@@ -23,8 +23,7 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -33,8 +32,8 @@
             label2 = new Label();
             txtTelegrama = new TextBox();
             txtPrecio = new TextBox();
-            rbOrdinario = new RadioButton();
             rbUrgente = new RadioButton();
+            rbOrdinario = new RadioButton();
             SuspendLayout();
             // 
             // btnCalcularPrecio
@@ -80,27 +79,27 @@
             txtPrecio.Size = new Size(125, 27);
             txtPrecio.TabIndex = 5;
             // 
-            // rbOrdinario
-            // 
-            rbOrdinario.AutoSize = true;
-            rbOrdinario.Location = new Point(105, 226);
-            rbOrdinario.Name = "rbOrdinario";
-            rbOrdinario.Size = new Size(93, 24);
-            rbOrdinario.TabIndex = 6;
-            rbOrdinario.TabStop = true;
-            rbOrdinario.Text = "Ordinario";
-            rbOrdinario.UseVisualStyleBackColor = true;
-            // 
             // rbUrgente
             // 
             rbUrgente.AutoSize = true;
-            rbUrgente.Location = new Point(204, 226);
+            rbUrgente.Location = new Point(239, 228);
             rbUrgente.Name = "rbUrgente";
             rbUrgente.Size = new Size(83, 24);
-            rbUrgente.TabIndex = 7;
+            rbUrgente.TabIndex = 6;
             rbUrgente.TabStop = true;
             rbUrgente.Text = "Urgente";
             rbUrgente.UseVisualStyleBackColor = true;
+            // 
+            // rbOrdinario
+            // 
+            rbOrdinario.AutoSize = true;
+            rbOrdinario.Location = new Point(105, 228);
+            rbOrdinario.Name = "rbOrdinario";
+            rbOrdinario.Size = new Size(93, 24);
+            rbOrdinario.TabIndex = 7;
+            rbOrdinario.TabStop = true;
+            rbOrdinario.Text = "Ordinario";
+            rbOrdinario.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -127,7 +126,7 @@
         private Label label2;
         private TextBox txtTelegrama;
         private TextBox txtPrecio;
-        private RadioButton rbOrdinario;
         private RadioButton rbUrgente;
+        private RadioButton rbOrdinario;
     }
 }
