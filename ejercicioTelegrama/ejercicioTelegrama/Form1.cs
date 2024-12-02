@@ -16,44 +16,31 @@ namespace ejercicioTelegrama
 
             textoTelegrama = txtTelegrama.Text;
 
-            if (chkUrgente.Checked)
+            if (rbUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
+            else if (rbOrdinario.Checked)
+            {
+                tipoTelegrama = 'o';
+            }
 
-            numPalabras = textoTelegrama.Length;
+            numPalabras = textoTelegrama.Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Length;
 
             if (tipoTelegrama == 'o')
             {
-                if (numPalabras <= 10)
-                {
-                    coste = 2.5;
-                }
-                else
-                {
-                    coste = 0.5 * numPalabras;
-                }
+                coste = numPalabras <= 10 ? 2.5 : 0.5 * numPalabras;
+            }
+            else if (tipoTelegrama == 'u')
+            {
+                coste = numPalabras <= 10 ? 5 : 5 + 0.75 * (numPalabras - 10);
             }
             else
             {
-                if (tipoTelegrama == 'u')
-                {
-                    if (numPalabras <= 10)
-                    {
-                        coste = 5;
-                    }
-                    else
-                    {
-                        coste = 5 + 0.75 * (numPalabras - 10);
-                    }
-                }
-                else
-                {
-                    coste = 0;
-                }
+                coste = 0;
             }
 
-            txtPrecio.Text = coste.ToString() + " euros";
+            txtPrecio.Text = $"{coste} euros";
         }
     }
 }

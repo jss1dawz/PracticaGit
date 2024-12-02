@@ -32,8 +32,9 @@
             label1 = new Label();
             label2 = new Label();
             txtTelegrama = new TextBox();
-            chkUrgente = new CheckBox();
             txtPrecio = new TextBox();
+            rbOrdinario = new RadioButton();
+            rbUrgente = new RadioButton();
             SuspendLayout();
             // 
             // btnCalcularPrecio
@@ -72,16 +73,6 @@
             txtTelegrama.Size = new Size(473, 110);
             txtTelegrama.TabIndex = 3;
             // 
-            // chkUrgente
-            // 
-            chkUrgente.AutoSize = true;
-            chkUrgente.Location = new Point(105, 227);
-            chkUrgente.Name = "chkUrgente";
-            chkUrgente.Size = new Size(91, 24);
-            chkUrgente.TabIndex = 4;
-            chkUrgente.Text = "Urgente?";
-            chkUrgente.UseVisualStyleBackColor = true;
-            // 
             // txtPrecio
             // 
             txtPrecio.Location = new Point(160, 274);
@@ -89,13 +80,36 @@
             txtPrecio.Size = new Size(125, 27);
             txtPrecio.TabIndex = 5;
             // 
+            // rbOrdinario
+            // 
+            rbOrdinario.AutoSize = true;
+            rbOrdinario.Location = new Point(105, 226);
+            rbOrdinario.Name = "rbOrdinario";
+            rbOrdinario.Size = new Size(93, 24);
+            rbOrdinario.TabIndex = 6;
+            rbOrdinario.TabStop = true;
+            rbOrdinario.Text = "Ordinario";
+            rbOrdinario.UseVisualStyleBackColor = true;
+            // 
+            // rbUrgente
+            // 
+            rbUrgente.AutoSize = true;
+            rbUrgente.Location = new Point(204, 226);
+            rbUrgente.Name = "rbUrgente";
+            rbUrgente.Size = new Size(83, 24);
+            rbUrgente.TabIndex = 7;
+            rbUrgente.TabStop = true;
+            rbUrgente.Text = "Urgente";
+            rbUrgente.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(rbUrgente);
+            Controls.Add(rbOrdinario);
             Controls.Add(txtPrecio);
-            Controls.Add(chkUrgente);
             Controls.Add(txtTelegrama);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -112,7 +126,8 @@
         private Label label1;
         private Label label2;
         private TextBox txtTelegrama;
-        private CheckBox chkUrgente;
         private TextBox txtPrecio;
+        private RadioButton rbOrdinario;
+        private RadioButton rbUrgente;
     }
 }
