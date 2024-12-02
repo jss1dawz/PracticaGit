@@ -29,11 +29,11 @@ namespace ejercicioTelegrama
 
             if (tipoTelegrama == 'o')
             {
-                coste = numPalabras <= 10 ? 2.5 : 0.5 * numPalabras;
+                coste = numPalabras <= 10 ? 3 : 0.5 * numPalabras;
             }
             else if (tipoTelegrama == 'u')
             {
-                coste = numPalabras <= 10 ? 5 : 5 + 0.75 * (numPalabras - 10);
+                coste = numPalabras <= 10 ? 6 : 5 + 0.75 * (numPalabras - 10);
             }
             else
             {
