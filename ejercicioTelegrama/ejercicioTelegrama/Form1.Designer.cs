@@ -23,8 +23,7 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        ///  Required method for Designer support - do not modify the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
@@ -107,8 +106,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(rbOrdinario);
             Controls.Add(rbUrgente);
+            Controls.Add(rbOrdinario);
             Controls.Add(txtPrecio);
             Controls.Add(txtTelegrama);
             Controls.Add(label2);
